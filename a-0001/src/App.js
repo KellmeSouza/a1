@@ -2,8 +2,11 @@
 import './App.css';
 
 function App() {
-  return (
-   <p>Olá</p>);
+  return (<div>
+   <p>Oláa</p>
+   <p>azul</p>
+   </div>
+   );
 }
 
 export default App;
