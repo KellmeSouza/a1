@@ -6,6 +6,13 @@ import mob2 from './img/mob2.png';
 import img3 from './img/slide3.jpg';
 import mob3 from './img/mob3.jpg';
 //importado as imagens
+//imagem do whats
+import whats from './img/whats.png';
+//fim imagem do whats
+//imagem do CARD
+import card1 from './img/juri1.jpg';
+import card2 from './img/juri2.jpg';
+//fim imagem do CARD
 import './App.css';
 
 function App() {
@@ -22,7 +29,7 @@ function App() {
       <div>
       <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
       <script src="https://kit.fontawesome.com/af562a2a63.js" crossOrigin="anonymous"></script>
-      <div className="container">
+      <div className="container3">
         <div className="menu-content">
           <label className="open-menu-all" htmlFor="open-menu-all">
             <input className="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open" />
@@ -119,6 +126,32 @@ function App() {
 </section>
 {/* final do conteudo da pagina */}
    </div>
+   {/* inicio do conteudo dos card's */}
+   <section id="servicos">  <h2 className="D"id="D">SERVIÇOS</h2></section>
+   <div className="container scroll-1">
+  <div className="card">
+    <div className="card__image"><img className="card__image" src={card2} alt="card__image"/></div>
+    <div className="card__content">
+        <span className="card__title">Legalização de Imóveis:</span>
+        <p className="card__describe">
+        Realizamos medição do terreno, perímetro, medição da casa, assinatura de planta, obtenção de RT (Responsabilidade Técnica) e todo o processo de legalização na prefeitura. Nosso diferencial é acompanhar o cliente em todas as etapas, garantindo uma solução completa e segura.
+        </p>
+    </div>
+  </div>
+  <div className="card">
+  <h2 className="D"id="D">SERVIÇOS</h2>
+    <div className="card__image" ><img className="card__image" src={card1} alt="card__image"/></div>
+    <div className="card__content">
+        <span className="card__title">Projeto Executivo:</span>
+        <p className="card__describe">
+        Para clientes que desejam construir, oferecemos suporte completo para a obtenção de autorização para construção junto à prefeitura. Elaboramos projetos detalhados de estrutura, fundação, elétrica, hidráulica e outros requisitos necessários para a execução da obra.
+        </p>
+    </div>
+  </div>
+  
+</div>
+
+   {/* final do conteudo dos card's */}
    {/* MAPA */}
    <section id="endereço">
         <div className="container2">
@@ -151,6 +184,14 @@ function App() {
 
    </selection>
     {/* lembrando essa é a estrutura HTML da pagina adaptada para jsx */}
+     {/* inicio ICONE WHATSAPP*/}
+   <selection id="whats" className="whats">
+   <a target="_blank" href="https://wa.me/5521971596965?text=Vim%20Pelo%20site%20e%20Gostaria%20de%20mais%20informações%20sobre%20a%20Aniceto">
+  <img src={whats} alt="Fale conosco pelo WhatsApp" width="150" title="Fale conosco pelo WhatsApp" />
+</a>
+
+
+   </selection>
    </div>
    );
 }

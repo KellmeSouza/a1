@@ -145,10 +145,10 @@
 .nav-auto div {
   border: 1px solid #adb4ba;
   padding: 15px;
-  border-radius: 80%;
+  border-radius: 50%;
   cursor: pointer;
   transition: 0.2s;
-  margin-top: -50px; /* Ajuste esse valor conforme necessário */
+  margin-top: -5px; /* Ajuste esse valor conforme necessário */
 }
   
   .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
@@ -176,13 +176,13 @@
   }
     /* final do carrocel do SITE */
        /* inicio do texto do SITE */
-    .D{ text-align: center; color:#666;}
+    .D{ text-align: center; color:#666; border: 30px solid transparent;}
     .container1{ 
-
+      border: 10px solid transparent;
         max-width: 1080px;
         margin: 0 auto;
     }
-    section p{ color:#666;}
+    section p{ color:#666;border: 10px solid transparent;}
 
    /* seu_arquivo.css estrutura do MAPA */
 .mapa {
@@ -193,7 +193,7 @@
   width: 100%;
   /* Define o height do contêiner, para ocupar toda a tela */
   height: 100%;
-
+  border: 10px solid transparent;
   /* Adiciona box-sizing para incluir o preenchimento e bordas na largura total */
   box-sizing: border-box;
 
@@ -204,7 +204,76 @@
     padding: 20px; /* Adicione um preenchimento para dar espaço ao conteúdo */
   }
 }
+ /* card sobre as qualidades*/
+.scroll-1::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
+.scroll-1::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #888;
+}
+
+.container  {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #666;
+  display: flex;
+  overflow-x: scroll;
+  padding: 24px;
+  width: 400px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-top: 24px;
+  border-radius: 8px;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 30px solid transparent;
+
+}
+.container .card {
+  flex: 0 0 400px; /* Defina a largura desejada para os cartões */
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  scroll-snap-align: start;
+  cursor: default; 
+}
+
+.card .card__image {
+  height: 200px; /* Ajuste a altura como necessário */
+  width: 100%; /* A imagem ocupa a largura total do cartão */
+}
+
+
+
+.card .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card .card__content .card__title {
+  font-size: 32px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.card .card__content .card__describe {
+  color: #666;
+  font-size: 16px;
+}
+ /* Estilos para o icone do whatsapp inicio*/
+ .whats{
+  position:fixed;
+  bottom:20px;
+  right:0px;
+  z-index:9999;
+ }
+ /* Estilos para o icone do whatsapp final*/
      /* Estilos para o rodapé inicio*/
 .footer {
   background-color: #c0c0c0;
