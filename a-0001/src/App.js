@@ -33,19 +33,19 @@ function App() {
             </div>
             <ul className="list-menu">
               <li className="item-menu">
-                <a href="#home" target="_blank" className="link-menu">INICIO</a>
+                <a href="#home" className="link-menu">INICIO</a>
               </li>
               <li className="item-menu">
-                <a href="#sobre" target="_blank" className="link-menu">SOBRE</a>
+                <a href="#sobre" className="link-menu">SOBRE</a>
               </li>
               <li className="item-menu">
-                <a href="#servicos" target="_blank" className="link-menu">SERVIÇOS</a>
+                <a href="#servicos" className="link-menu">SERVIÇOS</a>
               </li>
               <li className="item-menu">
-                <a href="#contato" target="_blank" className="link-menu">CONTATO</a>
+                <a href="#contato"  className="link-menu">CONTATO</a>
               </li>
               <li className="item-menu">
-                <a href="#endereço" target="_blank" className="link-menu">ENDEREÇO</a>
+                <a href="#endereço"  className="link-menu">ENDEREÇO</a>
               </li>
             </ul>
           </label>
@@ -119,9 +119,37 @@ function App() {
 </section>
 {/* final do conteudo da pagina */}
    </div>
-    {/* lembrando essa é a estrutura HTML da pagina adaptada para jsx */}
-   {/* rodape da pagina */}
-   <selection id="rodape" className="rodape"></selection>
+   {/* MAPA */}
+   <section id="endereço">
+        <div className="container2">
+          <h2 className="D"id="D" >ENDEREÇO</h2>
+          
+          <iframe    className="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.370670453591!2d-43.05230452558537!3d-22.825771834978937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x999ae547056747%3A0xa1a900ebfa2f27d!2sR.%20Dr.%20Fel%C3%ADciano%20Sodr%C3%A9%2C%2078%20-%20sala%201710%20-%20Centro%2C%20S%C3%A3o%20Gon%C3%A7alo%20-%20RJ%2C%2024440-440!5e0!3m2!1spt-BR!2sbr!4v1690235194642!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style={{ border: "1px solid #ccc" }} 
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade">
+           
+          </iframe>
+          <p>Endereço: R. Dr. Felíciano Sodré, 78 - sala 1710 - Centro, São Gonçalo<br/> - RJ, 24440-000</p>
+          <p>Telefone: (21) 97159-6965 </p>
+        </div>
+      </section>
+
+   {/* inicio rodape */}
+   <selection id="rodape" className="rodape">
+
+   <footer className="footer">
+  <div className="rodape">
+    <p> &copy; 2023 Aniceto </p>
+          
+  </div>
+</footer>
+
+   </selection>
     {/* lembrando essa é a estrutura HTML da pagina adaptada para jsx */}
    </div>
    );

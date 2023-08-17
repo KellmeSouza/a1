@@ -130,6 +130,7 @@
   
   .slide-box img{
     width: 100%;
+    
   }
   
   .nav-manual, .nav-auto{
@@ -140,13 +141,15 @@
     justify-content: center;
   }
   
-  .nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid #adb4ba;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-  }
+  .nav-manual .manual-btn,
+.nav-auto div {
+  border: 1px solid #adb4ba;
+  padding: 15px;
+  border-radius: 80%;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: -50px; /* Ajuste esse valor conforme necessário */
+}
   
   .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
     margin-right: 10px;
@@ -180,3 +183,39 @@
         margin: 0 auto;
     }
     section p{ color:#666;}
+
+   /* seu_arquivo.css estrutura do MAPA */
+.mapa {
+  /* Utiliza Flexbox para centralizar os elementos */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 100%;
+  /* Define o height do contêiner, para ocupar toda a tela */
+  height: 100%;
+
+  /* Adiciona box-sizing para incluir o preenchimento e bordas na largura total */
+  box-sizing: border-box;
+
+  /* Adiciona uma media query para telas com largura máxima de 768 pixels (tamanho de tela típico de celulares) */
+  @media (max-width: 768px) {
+    /* Modifique os estilos conforme necessário para se ajustar ao tamanho da tela do celular */
+    height: auto; /* Defina a altura como "auto" para que o conteúdo determine a altura */
+    padding: 20px; /* Adicione um preenchimento para dar espaço ao conteúdo */
+  }
+}
+
+     /* Estilos para o rodapé inicio*/
+.footer {
+  background-color: #c0c0c0;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+   background: #3d3e40;
+}
+.rodape {
+  max-width: 960px;
+  margin: 0 auto;
+ 
+}
+/* rodape fim*/
